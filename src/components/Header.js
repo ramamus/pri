@@ -8,13 +8,13 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Priyanka Satish</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Sophomore student of Eden Prairie High School
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          <a href="https://twitter.com/pri4baller">Tweeter</a> 
+          {' '}
+          <a href="https://www.instagram.com/priyanka_satish">Instagram</a>
         </p>
       </div>
     </div>
@@ -32,6 +32,15 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              props.onOpenArticle('school')
+            }}
+          >
+            School
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
               props.onOpenArticle('work')
             }}
           >
@@ -41,19 +50,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('activities')
             }}
           >
-            About
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
+            Activities
           </button>
         </li>
       </ul>
